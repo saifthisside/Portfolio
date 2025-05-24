@@ -1,0 +1,212 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  background-color: #111;
+  border-bottom: 1px solid #444;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.menu-icon i {
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #f2f2f2;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  margin-bottom: 20px;
+  background: #fff;
+  color: #111;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #ddd;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00bfff;
+}
+
+section {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.about h2,
+.skills h2,
+.work h2,
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #00bfff;
+  text-align: center;
+}
+
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+
+.about h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.about p,
+.skills p {
+  font-size: 1rem;
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+.work-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.work-gallery img {
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.work-gallery img:hover {
+  transform: scale(1.05);
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background: #222;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.contact button {
+  padding: 12px;
+  border: none;
+  background: #00bfff;
+  color: #111;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact button:hover {
+  background: #009acd;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    padding: 8px 18px;
+    font-size: 0.9rem;
+  }
+
+  .profile-photo {
+    width: 140px;
+    height: 140px;
+  }
+
+  .work-gallery img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  header.navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
